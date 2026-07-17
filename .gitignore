@@ -1,0 +1,57 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*密码*
+credentials*
+secrets*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.db
+*.sqlite*
+logs/
+snapshots/
+alarm_data/
+alarm_part/
+alarm_log/
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+*.jks
+*.keystore
+*.apk
+*.aab
+
+# IDE and operating system
+.idea/
+.cursor/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Private documents and archives
+*.rar
+*.7z
+*.doc
+*.docx
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    网络安全配置
+    
+    公开版本默认禁止远程 HTTP 明文传输，仅允许本机开发地址。
+    生产环境应使用 HTTPS，并按部署域名收紧访问范围。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    
+    <!-- 
+        域名配置（可选，用于更精确的控制）
+        注意：domain 标签不支持 CIDR 格式（如 192.168.0.0/16）
+    -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- 本地开发测试 -->
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <!-- Android 模拟器访问宿主机 -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>
+

@@ -1,0 +1,84 @@
+name: iotroom
+description: "IoT智能监控平台 - 设备间物联网智能化改造"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 图标库 - 现代化线性图标
+  phosphor_flutter: ^2.1.0
+  
+  # 图表库 - 数据可视化
+  fl_chart: ^0.69.2
+  
+  # 网络请求
+  dio: ^5.7.0
+  
+  # 状态管理 - 先用简单的Provider，后续可升级Riverpod
+  provider: ^6.1.2
+  
+  # 本地存储
+  shared_preferences: ^2.3.3
+  
+  # 下拉刷新
+  pull_to_refresh: ^2.0.0
+  
+  # 骨架屏加载效果
+  shimmer: ^3.0.0
+  
+  # 动画增强
+  flutter_animate: ^4.5.0
+  
+  # 屏幕适配
+  flutter_screenutil: ^5.9.3
+
+  # 视频播放（HLS流）
+  video_player: ^2.9.2
+  
+  # media_kit - 需要从 GitHub 下载原生库，国内网络可能超时
+  # media_kit: ^1.1.11
+  # media_kit_video: ^1.2.5
+  # media_kit_libs_video: ^1.0.5
+  
+  # HTTP请求（WVP API）
+  http: ^1.2.0
+  
+  # 保存到相册（兼容 AGP 8.x）
+  saver_gallery: ^3.0.6
+  
+  # 文件路径
+  path_provider: ^2.1.5
+  
+  # 权限管理
+  permission_handler: ^11.3.1
+  
+  # 本地通知
+  flutter_local_notifications: ^18.0.1
+  
+  # WebView - 用于在鸿蒙等系统上播放视频流
+  webview_flutter: ^4.10.0
+  
+  # 移除 VLC 播放器（兼容性问题）
+  # flutter_vlc_player: ^7.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # 字体配置（后续可添加自定义字体）
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Bold.ttf
+  #         weight: 700

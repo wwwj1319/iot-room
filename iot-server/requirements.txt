@@ -1,0 +1,20 @@
+# IoT Server 依赖
+# Python 3.8+
+
+# 数据库
+pymysql==1.1.0
+SQLAlchemy==2.0.23
+
+# MQTT
+paho-mqtt==1.6.1
+
+# Web API (可选，后续添加)
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# 工具
+python-dotenv==1.0.0
+loguru==0.7.2
+
+# 可选的视频抓拍服务
+aiohttp==3.10.11
