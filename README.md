@@ -2,9 +2,7 @@
 
 一套面向配电间、机房等场景的物联网监控系统。项目基于 Flutter、FastAPI、MQTT 和 Modbus RTU，覆盖传感器数据采集、历史查询、远程控制、视频接入和火灾告警处理。
 
-## 我的职责
-
-- 负责 Flutter 客户端和 Python 后端核心模块开发与联调。
+-  Flutter 客户端和 Python 后端核心模块开发与联调。
 - 实现 Modbus RTU 帧解析、CRC16 校验和控制命令组帧。
 - 对接 MQTT 数据链路、FastAPI 业务接口和 MySQL/SQLite 数据存储。
 - 对接 WVP-PRO、ZLMediaKit 和 GB28181 视频链路。
